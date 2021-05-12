@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Favourite Super Hero</ion-title>
+    <ion-back-button color="danger"></ion-back-button>
+  
+  </ion-toolbar>
+</ion-header>
+
+<!--Show the storage options and stores which is picked-->
+
+<ion-content>
+
+  <ion-title>Your favourite super hero is: {{myFeedback}}</ion-title>
+  
+<ion-list>
+  <ion-radio-group [(ngModel)]="myFeedback">
+   
+
+    <ion-item>
+      <ion-label>Batman</ion-label>
+      <ion-radio value="Batman"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Harry Potter</ion-label>
+      <ion-radio value="Harry Potter"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Super-Man</ion-label>
+      <ion-radio value="Super-Man"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>X-Men</ion-label>
+      <ion-radio value="X-Men"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Spider-Man</ion-label>
+      <ion-radio value="Spider-Man"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-list>
+
+<ion-button (click)="updateFeedback()">Press to confirm your Hero</ion-button>
+
+</ion-content>

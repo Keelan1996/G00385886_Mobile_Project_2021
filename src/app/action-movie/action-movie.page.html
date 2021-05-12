@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Batman</ion-title>
+    <ion-back-button></ion-back-button>
+  
+  </ion-toolbar>
+</ion-header>
+<!-- Display the httpClient data and a links to info page -->
+<ion-content>
+<p></p>
+
+<h3 ion-text color="light" [routerLink] = "['/batman-info']"  routerDirection="forward"><b>Click here for Information on Batman</b></h3>
+
+<ion-card *ngFor="let movie of MovieData">
+  <img src="{{movie.Poster}}">
+  <ion-card-header>
+    <ion-card-subtitle>{{movie.Year}}</ion-card-subtitle>
+    <ion-card-title>{{movie.Title}}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+ 
+  </ion-card-content>
+</ion-card>
+
+
+
+
+</ion-content>
+

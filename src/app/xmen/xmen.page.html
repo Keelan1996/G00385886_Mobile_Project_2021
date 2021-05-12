@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> X-Men</ion-title>
+    <ion-back-button></ion-back-button>
+  
+  </ion-toolbar>
+</ion-header>
+<!--displays hhtp data for x-men movies and link to x-men info-->
+<ion-content>
+  <h3 ion-text color="light" [routerLink] = "['/x-info']"  routerDirection="forward"><b>Click here for Information on the X-Men</b></h3>
+
+<ion-card *ngFor="let x of xmenData">
+  <img src="{{x.Poster}}">
+  <ion-card-header>
+    <ion-card-subtitle>{{x.Year}}</ion-card-subtitle>
+    <ion-card-title>{{x.Title}}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+ 
+  </ion-card-content>
+</ion-card>
+
+
+
+</ion-content>
+

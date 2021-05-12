@@ -1,4 +1,4 @@
-#container {
+/*#container {
   text-align: center;
 
   position: absolute;
@@ -24,4 +24,18 @@
 
 #container a {
   text-decoration: none;
+}*/
+page-home {
+
+}
+
+
+ion-content.home{
+    
+    //--ion-background: url(../../assets/img/harry.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: red;
+    text-align: center
 }

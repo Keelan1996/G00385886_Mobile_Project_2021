@@ -1,20 +1,50 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+     ABC Cinema
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content padding class= home>
+  
+  <h1 ion-text color= "light"><b>SuperHero Movies</b></h1>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  <!--Diplays all the superhero pages with images that you click further into, also displays the feedback to main page-->
+
+  <ion-title>Your Hero is : {{myFeedback}}</ion-title>
+
+  <ion-button [routerLink]= "['/feedback']" routerDirection="forward">Choose your Hero!</ion-button> 
+
+ 
+
+
+
+  <h2 ion-text color="light" [routerLink] = "['/action-movie']"  routerDirection="forward"><b>Batman</b></h2>
+ <img src="../assets/img/batman1.png">
+
+ <h2 ion-text color="light" [routerLink] = "['/comedy-movie']"  routerDirection="forward"><b>Harry Potter</b></h2>
+ <img src="../assets/img/harry.png">
+
+ <h2 ion-text color="light" [routerLink] = "['/super-man']"  routerDirection="forward"><b>Super-Man</b></h2>
+ <img src="../assets/img/super1.png">
+
+ <h2 ion-text color="light" [routerLink] = "['/xmen']"  routerDirection="forward"><b>X-Men</b></h2>
+ <img src="../assets/img/x.png">
+
+ <h2 ion-text color="light" [routerLink] = "['/spiderman']"  routerDirection="forward"><b>Spider-Man</b></h2>
+ <img src="../assets/img/spider.png">
+
+ <h2 ion-text color="light" [routerLink] = "['/geo-location']"  routerDirection="forward"><b>GPS</b></h2>
+ <img src="../assets/img/gps.png">
+
+ 
+ 
+ <br>
+
+
+  
+ 
+
+  
+  </ion-content>

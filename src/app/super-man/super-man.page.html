@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> SuperMan</ion-title>
+    <ion-back-button></ion-back-button>
+  
+  </ion-toolbar>
+</ion-header>
+<!--superman httpclient displayed and link to superman info page-->
+<ion-content>
+  <h3 ion-text color="light" [routerLink] = "['/super-info']"  routerDirection="forward"><b>Click here for Information on Super-Man</b></h3>
+
+<ion-card *ngFor="let super of supermanData">
+  <img src="{{super.Poster}}">
+  <ion-card-header>
+    <ion-card-subtitle>{{super.Year}}</ion-card-subtitle>
+    <ion-card-title>{{super.Title}}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+ 
+  </ion-card-content>
+</ion-card>
+
+
+
+</ion-content>
+

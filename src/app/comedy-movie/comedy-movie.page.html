@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Harry Potter</ion-title>
+    <ion-back-button></ion-back-button>
+  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!-- Display the httpClient data and a links to info page -->
+
+<h3 ion-text color="light" [routerLink] = "['/harry-info']"  routerDirection="forward"><b>Click here for Information on Harry Potter</b></h3>
+
+<ion-card *ngFor="let comedy of comedyData">
+  <img src="{{comedy.Poster}}">
+  <ion-card-header>
+    <ion-card-subtitle>{{comedy.Year}}</ion-card-subtitle>
+    <ion-card-title>{{comedy.Title}}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+ 
+  </ion-card-content>
+</ion-card>
+
+
+
+</ion-content>
